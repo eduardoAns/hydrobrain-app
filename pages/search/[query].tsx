@@ -5,25 +5,19 @@ import { ShopLayout } from '../../components/layouts';
 
 import { ProductList } from '../../components/extras(producto)';
 
-import { dbProducts } from '../../database';
 import { IProduct } from '../../interfaces';
 
 
-interface Props {
-    products: IProduct[];
-    foundProducts: boolean;
-    query: string;
-}
 
 
-const SearchPage: NextPage<Props> = ({ products, foundProducts, query }) => {
+const SearchPage: NextPage = () => {
 
 
   return (
     <ShopLayout title={'Teslo-Shop - Search'} pageDescription={'Encuentra los mejores productos de Teslo aquí'}>
         <Typography variant='h1' component='h1'>Buscar productos</Typography>
 
-        {
+        {/* {
             foundProducts 
                 ? <Typography variant='h2' sx={{ mb: 1 }} textTransform="capitalize">Término: { query }</Typography>
                 : (
@@ -37,7 +31,7 @@ const SearchPage: NextPage<Props> = ({ products, foundProducts, query }) => {
         
 
         
-        <ProductList products={ products } />
+        <ProductList products={ products } /> */}
         
     </ShopLayout>
   )
@@ -47,37 +41,37 @@ const SearchPage: NextPage<Props> = ({ products, foundProducts, query }) => {
 
 // You should use getServerSideProps when:
 // - Only if you need to pre-render a page whose data must be fetched at request time
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+// export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     
-    const { query = '' } = params as { query: string };
+//     const { query = '' } = params as { query: string };
 
-    if ( query.length === 0 ) {
-        return {
-            redirect: {
-                destination: '/',
-                permanent: true
-            }
-        }
-    }
+//     if ( query.length === 0 ) {
+//         return {
+//             redirect: {
+//                 destination: '/',
+//                 permanent: true
+//             }
+//         }
+//     }
 
-    // y no hay productos
-    let products = await dbProducts.getProductsByTerm( query );
-    const foundProducts = products.length > 0;
+//     // y no hay productos
+//     let products = await dbProducts.getProductsByTerm( query );
+//     const foundProducts = products.length > 0;
 
-    // TODO: retornar otros productos
-    if ( !foundProducts ) {
-        // products = await dbProducts.getAllProducts(); 
-        products = await dbProducts.getProductsByTerm('shirt');
-    }
+//     // TODO: retornar otros productos
+//     if ( !foundProducts ) {
+//         // products = await dbProducts.getAllProducts(); 
+//         products = await dbProducts.getProductsByTerm('shirt');
+//     }
 
-    return {
-        props: {
-            products,
-            foundProducts,
-            query
-        }
-    }
-}
+//     return {
+//         props: {
+//             products,
+//             foundProducts,
+//             query
+//         }
+//     }
+// }
 
 
 export default SearchPage
