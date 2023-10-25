@@ -1,10 +1,6 @@
 import type { NextPage } from 'next';
 import { ShopLayout } from '../components/layouts';
 import { Box, Button, styled, Typography } from "@mui/material";
-import headerImg from '../public/assets/hero-image.png'
-import Image from 'next/image'
-
-
 
 const HomePage: NextPage = () => {
   const CustomBox = styled(Box) (({ theme }) => ({
@@ -54,7 +50,7 @@ const HomePage: NextPage = () => {
                     color: '#fff',
                 }}
                 >
-                    We'll build house of your dream
+                    Haremos que el consumo del agua sea más eficiente
                 </Typography>
 
                 <Typography
@@ -65,8 +61,7 @@ const HomePage: NextPage = () => {
                     color: '#fff',
                 }}
                 >
-                    We have 9000 more review and our customers
-                    trust on out property and quality products.
+                    Utilizando tecnicas de inteligencia artificial, podremos predecir el consumo de agua de tu hogar, y asi poder ahorrar en tu factura de agua.
                 </Typography>
 
                 <Box>
