@@ -12,7 +12,7 @@ const HomePage: NextPage = () => {
       gap: theme.spacing(2),
       paddingTop: theme.spacing(10),
       // cor de fundo
-      backgroundColor: 'green',
+      backgroundColor: '#C5F6C3',
       [theme.breakpoints.down('md')]: {
           flexDirection: 'column',
           alignItems: 'center',
@@ -47,7 +47,7 @@ const HomePage: NextPage = () => {
                 component= 'h1'
                 sx={{
                     fontWeight: 700,
-                    color: '#fff',
+                    color: '#000000',
                 }}
                 >
                     Haremos que el consumo del agua sea más eficiente
@@ -58,7 +58,7 @@ const HomePage: NextPage = () => {
                 sx={{
                     py: 3,
                     lineHeight: 1.6,
-                    color: '#fff',
+                    color: '#000000',
                 }}
                 >
                     Utilizando tecnicas de inteligencia artificial, podremos predecir el consumo de agua de tu hogar, y asi poder ahorrar en tu factura de agua.
@@ -95,9 +95,9 @@ const HomePage: NextPage = () => {
                         fontSize:'0.9rem',
                         textTransform: 'capitalize',
                         borderRadius: 0,
-                        color: '#fff',
+                        color: '#000000',
                         backgroundColor: 'transparent',
-                        borderColor: '#fff',
+                        borderColor: '#000000',
                         "&&:hover": {
                             color: '#343a55',
                             borderColor: '#343a55',

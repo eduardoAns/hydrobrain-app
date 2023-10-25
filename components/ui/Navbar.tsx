@@ -23,7 +23,9 @@ export const Navbar = () => {
     
 
     return (
-        <AppBar>
+        <AppBar 
+            sx={{ background: '#C3F2FC', backdropFilter: 'blur(4px)', transition: 'all 0.5s ease-out'}}
+        >
             <Toolbar>
                 <NextLink href='/' passHref>
                     <Link display='flex' alignItems='center'>
