@@ -23,8 +23,8 @@ export const Temporizador:FC<Props> = ({expiryTimestamp}) => {
     <div style={{textAlign: 'center'}} className=' mt-20'>
       <h1 className=' text-2xl font-semibold mb-4'>! ESTA ES TU OPORTUNIDAD ! </h1>
       <p className=' text-xl'>DISFRUTA LOS BENEFICIOS DE NUESTRA PROMOCIÓN DE LANZAMIENTO</p>
-      <div style={{fontSize: '100px'}}>
-        <span>{days} D</span>:<span>{hours} H</span>:<span>{minutes} M</span> <span>{seconds} S</span>
+      <div className=' text-5xl font-bold sm:text-6xl'>
+        <span >{days}D</span>:<span>{hours}H</span>:<span>{minutes}M</span> <span>{seconds}S</span>
       </div>
       {/* <p>{isRunning ? 'Running' : 'Not running'}</p> */}
       {/* <button onClick={start}>Start</button>
