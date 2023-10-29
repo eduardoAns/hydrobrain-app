@@ -27,27 +27,21 @@ export const Navbar = () => {
             sx={{ background: '#C3F2FC', backdropFilter: 'blur(4px)', transition: 'all 0.5s ease-out'}}
         >
             <Toolbar>
-                <NextLink href='/' passHref>
-                    <Link display='flex' alignItems='center'>
+                    <Link href='/' display='flex' alignItems='center'>
                         <Typography variant='h6'>Hydrobrain |</Typography>
                         <Typography sx={{ ml: 0.5 }}>App</Typography>
                     </Link>  
-                </NextLink>
 
                 <Box flex={ 1 } />
 
                 <Box sx={{ display: isSearchVisible ? 'none' : { xs: 'none', sm: 'block' } }}
                     className="fadeIn">
-                    <NextLink href='/template' passHref>
-                        <Link>
+                        <Link href='/template'>
                             <Button color={ asPath === '/template' ? 'primary':'info'}>Proyectos</Button>
                         </Link>
-                    </NextLink>
-                    <NextLink href='/category/template' passHref>
-                        <Link>
+                        <Link href='/category/template'>
                             <Button color={ asPath === '/category/template' ? 'primary':'info'}>Sobre nosotros</Button>
                         </Link>
-                    </NextLink>
                 </Box>
 
 

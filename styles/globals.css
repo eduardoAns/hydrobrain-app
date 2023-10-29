@@ -1,4 +1,22 @@
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import './css/additional-styles/utility-patterns.css';
+@import './css/additional-styles/range-slider.css';
+@import './css/additional-styles/toggle-switch.css';
+@import './css/additional-styles/theme.css';
+
+@import 'tailwindcss/utilities';
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -18,7 +36,6 @@
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-
 
 .circular-btn {
   border-radius: 30px;
