@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import TestimonialImage from '../../public/assets/testimonial.jpg'
 import Slider from './ui/slider'
+import { Temporizador } from './ui/temporizador'
 
 export default function Testimonials() {
+  const time = new Date();
+  time.setSeconds(time.getSeconds() + 60*60*24*30); // 10 minutes timer
   return (
     <section className="relative bg-white">
 
@@ -33,7 +36,8 @@ export default function Testimonials() {
 
           <Slider />
           
-
+          <Temporizador expiryTimestamp={time} />
+  
         </div>
       </div>
     </section>

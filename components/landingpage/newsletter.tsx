@@ -1,6 +1,9 @@
 export default function Newsletter() {
   return (
     <section className="bg-white">
+      <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+        <h2 className="h2">Contacto</h2>
+      </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
 

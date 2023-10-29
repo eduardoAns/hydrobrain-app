@@ -1,4 +1,4 @@
-import VideoThumb from '../../public/assets/hero-image.png'
+import VideoThumb from '../../public/assets/agua-hero.jpg'
 import ModalVideo from './modal-video'
 
 export default function Hero() {
@@ -38,7 +38,7 @@ export default function Hero() {
             thumbWidth={768}
             thumbHeight={432}
             thumbAlt="Modal video thumbnail"
-            video="/assets/video/video.mp4"
+            video="/assets/videos/video.mp4"
             videoWidth={1920}
             videoHeight={1080} />
 

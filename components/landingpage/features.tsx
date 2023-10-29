@@ -117,8 +117,9 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" style={{opacity:"0.4"}} src={FeaturesBg} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" style={{opacity:"0.3"}} src={FeaturesBg} width={500} height="462" alt="Features bg" />
                       <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={EnergiaImage} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                      <p className=' z-50 text-2xl text-slate-700 font-semibold absolute left-24 sm:left-36' >Energías renovable</p>
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -136,8 +137,9 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" style={{opacity:"0.4"}} src={FeaturesBg} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" style={{opacity:"0.3"}} src={FeaturesBg} width={500} height="462" alt="Features bg" />
                       <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={ReutilizarImage} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                      <p className=' z-50 text-2xl text-slate-700 font-semibold absolute left-24 sm:left-36 ' >Monitoreo en línea</p>
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -155,8 +157,9 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" style={{opacity:"0.4"}} src={FeaturesBg} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" style={{opacity:"0.3"}} src={FeaturesBg} width={500} height="462" alt="Features bg" />
                       <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={MonitoreoImage} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                      <p className=' z-50 text-2xl text-slate-700 font-semibold absolute  left-6 sm:left-20' >Reutilizacion de desperdicios</p>
                     </div>
                   </Transition>
                 </div>
