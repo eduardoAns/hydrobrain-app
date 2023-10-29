@@ -132,7 +132,7 @@ export default function Slider() {
             </button>
         </div>
 
-        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js" async></script>
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js" defer></script>
     </div>
   )
 }
