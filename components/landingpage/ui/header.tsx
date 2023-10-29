@@ -39,17 +39,17 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li className='p-4'>
-                <Link href="/signup" >
+                <Link href="/" >
                 <LinkedInIcon fontSize='medium'/>
                 </Link> 
               </li>
               <li className='p-4'>
-                <Link href="/signup" >
+                <Link href="/" >
                   <InstagramIcon fontSize='medium'/>
                 </Link> 
               </li>
               <li className='p-4'>
-                <Link href="/signup" >
+                <Link href="/" >
                   <WhatsAppIcon fontSize='medium'/>
                 </Link> 
               </li>
