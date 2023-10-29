@@ -83,7 +83,6 @@ export default function MobileMenu() {
                 </Link> 
               </li>
           </ul>   
-          ¿
         </Transition>
       </div>
     </div>
